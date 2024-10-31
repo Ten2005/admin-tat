@@ -39,10 +39,10 @@ return (
     <Accordion className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6' type="single" collapsible>
     {data.map((item: DataType) => (
                 <AccordionItem key={item.id} value={`item-${item.id}`}>
-                    <AccordionTrigger>{item.nickname}</AccordionTrigger>
+                    <AccordionTrigger className='bg-white shadow'>{item.nickname}</AccordionTrigger>
                     {item.interpretations.map((interpretation: string, index: number) => (
-                        <AccordionContent key={index+1} className='text-start'>
-                            {index} - {interpretation}
+                        <AccordionContent key={index} className='text-start'>
+                            img{index+1} - {interpretation}
                         </AccordionContent>
                     ))}
                 </AccordionItem>
