@@ -30,7 +30,7 @@ export function Auth({setAllowed}: AuthProps) {
         setUserInput('');
     }
 return (
-    <Card className="w-[350px]">
+    <Card className="w-full max-w-96">
     <CardHeader>
         <CardTitle>Login TAT admin page</CardTitle>
         <CardDescription>including created story and nickname</CardDescription>
